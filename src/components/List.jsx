@@ -16,8 +16,8 @@ const List = ({ api }) => {
               <div>{quote.description}</div>
             </div>
             <div className="flex gap-2">
-              <RemoveBtn />
-              <Link href={"/editQuote/123"}>
+              <RemoveBtn id={quote._id} />
+              <Link href={`/editQuote/${quote._id}`}>
                 <HiPencilAlt />
               </Link>
             </div>
